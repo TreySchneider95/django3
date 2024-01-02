@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ key }}</title>
+</head>
+<body>
+    <h1>{{ key }}:</h1>
+    <p>{{ value }}</p>
+    {% if food_img %}
+      <img src="{{ food_img }}" alt=""><br>
+    {% endif %}
+    <a href="{% url 'home' %}">Back</a>
+</body>
+</html>
